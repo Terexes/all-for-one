@@ -24,8 +24,8 @@
     
   </details>
   <details>
-  <summary><strong>Rodando via Docker vs Rodando localmente</strong></summary>
-  <br />
+  <summary><strong>Rodando via Docker vs Rodando localmente</strong></summary><br />
+  
   ## Com Docker
   
   **:warning: Antes de começar, seu docker-compose precisa estar na versão 1.29 ou superior. [Veja aqui](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-pt) ou [na documentação](https://docs.docker.com/compose/install/) como instalá-lo. No primeiro artigo, você pode substituir onde está com `1.26.0` por `1.29.2`.**
@@ -44,7 +44,7 @@
   3. Dentro do terminal interativo, execute o comando `npm install` para, caso necessário, instalar as dependências do projeto.
 
   <br />
-  
+
   ## Sem Docker
 
   1. Dentro da pasta do projeto, utilize o comando `npm install` para, caso necessário, instalar as dependências do projeto.
