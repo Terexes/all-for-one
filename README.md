@@ -19,7 +19,7 @@
     
   - `git clone git@github.com:Terexes/all-for-one.git`;
   
-  - Entre na pasta que foi ao final do processo de clonagem com o comando abaixo:
+  2. - Entre na pasta que foi criada ao final do processo de clonagem com o comando abaixo:
     - `cd all-for-one`;
     
   </details>
@@ -29,6 +29,7 @@
   <br />
   **:warning: Antes de começar, seu docker-compose precisa estar na versão 1.29 ou superior. [Veja aqui](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-pt) ou [na documentação](https://docs.docker.com/compose/install/) como instalá-lo. No primeiro artigo, você pode substituir onde está com `1.26.0` por `1.29.2`.**
   <br />
+
   1. Rode os serviços `node` e `db` com o comando `docker-compose up -d`.
   - Lembre-se de parar o `mysql` se estiver usando localmente na porta padrão (`3306`), ou adapte, caso queria fazer uso da aplicação em containers
   - Esses serviços irão inicializar um container chamado `all_for_one` e outro chamado `all_for_one_db`.
@@ -40,36 +41,39 @@
   - Para sair do terminal interativo, utilize o comando `exit`.
 
   3. Dentro do terminal interativo, execute o comando `npm install` para, caso necessário, instalar as dependências do projeto.
+
   <br />
   ## Sem Docker
   <br />
+
   1. Dentro da pasta do projeto, utilize o comando `npm install` para, caso necessário, instalar as dependências do projeto.
+
   2. Certifique-se de ter o node instalado em seu computador para rodar o projeto desta forma.
+
   </details>
   <details>
   <summary><strong>Restaurando o banco de dados northwind</strong></summary>
+
   1. Dentro do seu gerenciador de banco de dados de preferência, abra uma nova janela de query e execute o conteúdo do arquivo northwind.sql.
+
   2. Após alguns segundos, clique no botão de atualização da listagem de banco de dados.
+
   3. Certifique que não há dados faltando no conteúdo do banco. Caso falte algum dado, drope o banco e rode novamente o conteúdo do arquivo northwind.sql, dessa vez, aguardando um tempo maior para a execução do script.
+
   </details>
   <details>
   <summary><strong>Desafios propostos no decorrer do desenvolvimento do projeto</strong></summary>
-  Monte queries para encontrar as informações esperadas pelos desafios:
 
   ## Desafios Iniciais
 
   1 - Exiba apenas os nomes dos produtos na tabela `products`.
 
-    
   2 - Exiba os dados de todas as colunas da tabela `products`.
 
-    
   3 - Escreva uma query que exiba os valores da coluna que representa a primary key da tabela `products`.
 
-    
   4 - Conte quantos registros existem na coluna `product_name` da tabela `products`.
 
-    
   5 - Monte uma query que exiba os dados da tabela `products` a partir do quarto registro até o décimo terceiro.
 
   <details>
@@ -82,13 +86,11 @@
 
     
   6 - Exiba os dados das colunas `product_name` e `id` da tabela `products` de maneira que os resultados estejam em ordem alfabética dos nomes.
-
     
   7 - Mostre apenas os ids dos 5 últimos registros da tabela `products` (a ordernação deve ser baseada na coluna `id`).
-
     
   8 - Faça uma consulta que retorne três colunas, respectivamente, com os nomes 'A', 'Trybe' e 'eh', e com valores referentes a soma de '5 + 6', a string 'de', a soma de '2 + 8'.
-
+  
   <details>
     <summary>&nbsp;&nbsp;<strong>👀 Observações técnicas</strong></summary>
 
